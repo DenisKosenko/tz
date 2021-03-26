@@ -1,0 +1,27 @@
+.about {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.about__us {
+  background: linear-gradient(to bottom, #424242 0%, #343434 100%);
+  border-radius: 6px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #fff;
+  text-shadow: rgba(255, 255, 255, 0.781) 1px 0 10px;
+}
+.about__h3 {
+  font-size: 20px;
+  color: #50c5ac;
+  text-shadow: rgba(255, 255, 255, 0.527) 1px 0 10px;
+}
+.about__p {
+  font-size: 16px;
+  color: #fff;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.about__ul {
+  font-size: 14px;
+}
