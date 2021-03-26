@@ -1,0 +1,5 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="sp-world-match" width="108" height="30"><defs><symbol id="sp-world-match" viewBox="0 0 72 19">
+      <path d="M54.228 8.814V0h-9.3l-15.5 20h9.4l6.772-8.786.043 8.786h8.643l6.814-8.786V20h2.228l6.615-8.771V0H60.9l-6.671 8.814z" fill="#000"></path><path d="M38.829 20l6.771-8.786.043 8.786h8.643l6.828-8.786V20h2.229l6.614-8.772v-.171C61.043 9.67 50.1 8.814 38.257 8.628L29.43 20h9.4z" fill="#5E5B49"></path><path d="M24.343 8.786L24.3 0h-8.63L8.843 8.786V0H0v20h9.043l6.671-8.814V20h9.314L40.514 0h-9.4l-6.771 8.786z" fill="#000"></path><path d="M9.043 20l6.671-8.814V20h9.314l8.843-11.414h-.429a233.7 233.7 0 00-9.085.185v.015-.014C15.143 9.171 6.9 10.156 0 11.541V20h9.043z" fill="#5E5B49"></path><path d="M72.014 11.3V20h-6.629l6.629-8.7z" fill="#E51E16"></path>
+    </symbol></defs>
+                <use xlink:href="#sp-world-match"></use>
+            </svg>

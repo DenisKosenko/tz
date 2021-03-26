@@ -46,10 +46,16 @@
 
     &__partner{
         filter: grayscale(100%);
+        cursor: pointer;
+        img{
+            height: 25px;
+        }
+        &:hover{
+            filter: grayscale(0);
+        }
     }
 
     &__container{
-        
         background-color: #212121;
     }
 
@@ -60,6 +66,14 @@
         padding-left: 0;
     }
 
+    &__comercial{
+        cursor: pointer;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        img{
+            height: 27px;
+        }
+    }
     &__copyright{
         color: #a9a9a9;
         padding-bottom: 15px;

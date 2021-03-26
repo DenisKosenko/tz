@@ -10,6 +10,7 @@
   background: linear-gradient(to bottom, #50c5ac 0%, #3fa18d 50%, #2e7f70 100%);
   border: 1px solid #55a399;
   margin-right: 5px;
+  max-height: 36px;
   cursor: pointer;
 }
 .button-green:hover {
@@ -26,16 +27,28 @@
   border-radius: 6px;
   background: linear-gradient(to bottom, #de3c21 0%, #b41b0f 100%);
   border: 1px solid #bc2502;
+  max-height: 36px;
   cursor: pointer;
 }
 .button-red:hover {
   transform: scale(0.95);
 }
 .header {
+  z-index: 1;
   background: linear-gradient(to bottom, #424242 0%, #343434 100%);
+}
+.header__logo img {
+  max-height: 22px;
+  padding-bottom: 5px;
+}
+.header__logo-full img {
+  padding-top: 5px;
+  max-height: 50px;
 }
 .header__burger {
   cursor: pointer;
+  display: flex;
+  align-items: center;
   padding-top: 5px;
 }
 .header__burger svg {
@@ -43,12 +56,12 @@
 }
 .header__overnav {
   position: relative;
-  padding: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
   border-bottom: 1px solid #656565;
 }
 .header__list {
-  margin-top: 5px;
-  padding-bottom: 5px;
+  margin-top: 0;
   list-style-type: none;
   padding-left: 0;
 }

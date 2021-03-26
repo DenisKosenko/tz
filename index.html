@@ -11,9 +11,15 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="header__overnav row justify-content-between">
-                <div class="header__burger d-block d-lg-none" id="burger"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg></div>
-                <div class="headeer__buttons col-auto col-lg-12 row justify-content-end">
+            <div class="header__overnav row justify-content-between align-items-center">
+                <div class="header__logo-full col-lg-3 d-lg-block d-none">
+                    <a href="#"><img src="img/logoFull.svg" alt="Pin-Up"></a>
+                </div>
+                <div class="header__burger d-block d-lg-none" id="burger">
+                    <svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg>
+                    <a class="header__logo" href="#"><img src="img/logo.svg" alt="Pin-Up"></a>
+                </div>
+                <div class="headeer__buttons col-auto col-lg-9 row justify-content-end">
                     <button class="button-green">Вход</button>
                     <button class="button-red">Регестрация</button>
                 </div>
@@ -53,12 +59,12 @@
                 </div>
                 <button class="button-green col-10 ">Получить сейчас</button>
             </div>
-            <div class="slider col-12 col-lg-9">
+            <div class="slider col-12 col-lg-9" id="slider">
                 <div class="slider__text">
-                    <h2 class="slider__head">Ставьте на киберспорт!</h2>
-                    <h4 class="slider__underhead">Высокие кэфы, топовые события!</h4>
+                    <h2 class="slider__head" id="slider2h">Ставьте на киберспорт!</h2>
+                    <h4 class="slider__underhead" id="slider4h">Высокие кэфы, топовые события!</h4>
                 </div>
-                <div class="slider__buttom button-red ">Перейти в раздел</div>
+                <div class="slider__buttom button-red" id="sliderButton">Перейти в раздел</div>
             </div>
         </div>
 
@@ -380,28 +386,56 @@
                 </div>
             </div>
             <ul class="footer__partner-list row justify-content-around">
-                <li class="footer__partner col-auto"><img src="img/partner1.svg" height="35" alt="partner"></li>
-                <li class="footer__partner col-auto"><img src="img/partner2.svg" height="35" alt="partner"></li>
-                <li class="footer__partner col-auto"><img src="img/partner3.svg" height="35" alt="partner"></li>
-                <li class="footer__partner col-auto"><img src="img/partner4.svg" height="35" alt="partner"></li>
-                <li class="footer__partner col-auto"><img src="img/partner5.svg" height="35" alt="partner"></li>
-                <li class="footer__partner col-auto"><img src="img/partner6.svg" height="35" alt="partner"></li>
-                <li class="footer__partner col-auto"><img src="img/partner7.svg" height="35" alt="partner"></li>
-                <li class="footer__partner col-auto"><img src="img/partner8.svg" height="35" alt="partner"></li>
-                <li class="footer__partner col-auto"><img src="img/partner9.svg" height="35" alt="partner"></li>
-                <li class="footer__partner col-auto"><img src="img/partner10.svg" height="35" alt="partner"></li>
+                <li class="footer__partner col-auto"><img src="img/partner1.svg" alt="partner"></li>
+                <li class="footer__partner col-auto"><img src="img/partner2.svg" alt="partner"></li>
+                <li class="footer__partner col-auto"><img src="img/partner3.svg" alt="partner"></li>
+                <li class="footer__partner col-auto"><img src="img/partner4.svg" alt="partner"></li>
+                <li class="footer__partner col-auto"><img src="img/partner5.svg" alt="partner"></li>
+                <li class="footer__partner col-auto"><img src="img/partner6.svg" alt="partner"></li>
+                <li class="footer__partner col-auto"><img src="img/partner7.svg" alt="partner"></li>
+                <li class="footer__partner col-auto"><img src="img/partner8.svg" alt="partner"></li>
+                <li class="footer__partner col-auto"><img src="img/partner9.svg" alt="partner"></li>
+                <li class="footer__partner col-auto"><img src="img/partner10.svg" alt="partner"></li>
+                <li class="footer__partner col-auto"><img src="img/partner11.svg" alt="partner"></li>
+                <li class="footer__partner col-auto"><img src="img/partner12.svg" alt="partner"></li>
+                <li class="footer__partner col-auto"><img src="img/partner13.svg" alt="partner"></li>
+                <li class="footer__partner col-auto"><img src="img/partner14.svg" alt="partner"></li>
+                <li class="footer__partner col-auto"><img src="img/partner15.svg" alt="partner"></li>
+                <li class="footer__partner col-auto"><img src="img/partner16.svg" alt="partner"></li>
+                <li class="footer__partner col-auto"><img src="img/partner17.svg" alt="partner"></li>
+                <li class="footer__partner col-auto"><img src="img/partner18.svg" alt="partner"></li>
+                <li class="footer__partner col-auto"><img src="img/partner19.svg" alt="partner"></li>
+                <li class="footer__partner col-auto"><img src="img/partner20.svg" alt="partner"></li>
+                <li class="footer__partner col-auto"><img src="img/partner21.svg" alt="partner"></li>
+                <li class="footer__partner col-auto"><img src="img/partner22.svg" alt="partner"></li>
+                <li class="footer__partner col-auto"><img src="img/partner23.svg" alt="partner"></li>
+                <li class="footer__partner col-auto"><img src="img/partner24.svg" alt="partner"></li>
+                <li class="footer__partner col-auto"><img src="img/partner25.svg" alt="partner"></li>
+                <li class="footer__partner col-auto"><img src="img/partner26.svg" alt="partner"></li>
+                <li class="footer__partner col-auto"><img src="img/partner27.svg" alt="partner"></li>
+                <li class="footer__partner col-auto"><img src="img/partner28.svg" alt="partner"></li>
+                <li class="footer__partner col-auto"><img src="img/partner29.svg" alt="partner"></li>
+                <li class="footer__partner col-auto"><img src="img/partner30.svg" alt="partner"></li>
+                <li class="footer__partner col-auto"><img src="img/partner31.svg" alt="partner"></li>
+                <li class="footer__partner col-auto"><img src="img/partner32.svg" alt="partner"></li>
+                <li class="footer__partner col-auto"><img src="img/partner33.svg" alt="partner"></li>
+                <li class="footer__partner col-auto"><img src="img/partner34.svg" alt="partner"></li>
+                <li class="footer__partner col-auto"><img src="img/partner35.svg" alt="partner"></li>
+                <li class="footer__partner col-auto"><img src="img/partner36.svg" alt="partner"></li>
+                <li class="footer__partner col-auto"><img src="img/partner37.svg" alt="partner"></li>
+                <li class="footer__partner col-auto"><img src="img/partner38.svg" alt="partner"></li>
+                <li class="footer__partner col-auto"><img src="img/partner39.svg" alt="partner"></li>
             </ul>
         </div>
         <div class="footer__container">
             <div class="container">
                 <ul class="footer__comercial-list row justify-content-around">
-                    <li class="footer__comercial col-auto"><img src="img/comercial1.svg" height="30" alt="partner"></li>
-                    <li class="footer__comercial col-auto"><img src="img/comercial2.svg" height="30" alt="partner"></li>
-                    <li class="footer__comercial col-auto"><img src="img/comercial3.svg" height="30" alt="partner"></li>
-                    <li class="footer__comercial col-auto"><img src="img/comercial4.svg" height="30" alt="partner"></li>
-                    <li class="footer__comercial col-auto"><img src="img/comercial5.svg" height="30" alt="partner"></li>
-                    <li class="footer__comercial col-auto"><img src="img/comercial6.svg" height="30" alt="partner"></li>
-                    <li class="footer__comercial col-auto"><img src="img/comercial7.svg" height="30" alt="partner"></li>
+                    <li class="footer__comercial col-auto"><img src="img/comercial2.svg"alt="partner"></li>
+                    <li class="footer__comercial col-auto"><img src="img/comercial3.svg" alt="partner"></li>
+                    <li class="footer__comercial col-auto"><img src="img/comercial4.svg" alt="partner"></li>
+                    <li class="footer__comercial col-auto"><img src="img/comercial5.svg" alt="partner"></li>
+                    <li class="footer__comercial col-auto"><img src="img/comercial6.svg" alt="partner"></li>
+                    <li class="footer__comercial col-auto"><img src="img/comercial7.svg" alt="partner"></li>
                 </ul>
             </div>
         </div>

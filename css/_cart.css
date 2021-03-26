@@ -27,7 +27,7 @@
 .cart__image {
   cursor: pointer;
   position: relative;
-  background-image: url(../img/content1.png);
+  background-image: url(../img/content1.webp);
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;

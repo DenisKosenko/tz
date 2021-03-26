@@ -3774,6 +3774,7 @@ html {
   background: linear-gradient(to bottom, #50c5ac 0%, #3fa18d 50%, #2e7f70 100%);
   border: 1px solid #55a399;
   margin-right: 5px;
+  max-height: 36px;
   cursor: pointer;
 }
 .button-green:hover {
@@ -3790,16 +3791,28 @@ html {
   border-radius: 6px;
   background: linear-gradient(to bottom, #de3c21 0%, #b41b0f 100%);
   border: 1px solid #bc2502;
+  max-height: 36px;
   cursor: pointer;
 }
 .button-red:hover {
   transform: scale(0.95);
 }
 .header {
+  z-index: 1;
   background: linear-gradient(to bottom, #424242 0%, #343434 100%);
+}
+.header__logo img {
+  max-height: 22px;
+  padding-bottom: 5px;
+}
+.header__logo-full img {
+  padding-top: 5px;
+  max-height: 50px;
 }
 .header__burger {
   cursor: pointer;
+  display: flex;
+  align-items: center;
   padding-top: 5px;
 }
 .header__burger svg {
@@ -3807,12 +3820,12 @@ html {
 }
 .header__overnav {
   position: relative;
-  padding: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
   border-bottom: 1px solid #656565;
 }
 .header__list {
-  margin-top: 5px;
-  padding-bottom: 5px;
+  margin-top: 0;
   list-style-type: none;
   padding-left: 0;
 }
@@ -3851,12 +3864,13 @@ html {
   overflow-x: hidden;
 }
 body {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', sans-serif, Arial, Helvetica, sans-serif;
   margin: 0;
   box-sizing: border-box;
   background-color: #262634;
   overflow-x: hidden;
   width: 100%;
+  font-display: swap;
 }
 a {
   text-decoration: none;
@@ -3883,11 +3897,21 @@ a {
   padding-bottom: 75px;
   padding-top: 25px;
   position: relative;
+  transform: translateY(0);
+  animation: spin 1s infinite ease-in-out alternate;
 }
 @media (min-width: 1200px) {
   .main__bonus {
     padding-bottom: 100px;
     padding-top: 35px;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(15px);
   }
 }
 .main__bonus::after {
@@ -3902,6 +3926,34 @@ a {
   transform: translateX(-50%) translateY(-50%);
   background-position: center;
   background-image: url(../img/bonus2.png);
+}
+.main::before {
+  content: '';
+  background-image: url(../img/background-left.webp);
+  display: block;
+  left: calc(54% - 959px);
+  width: 319px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+.main::after {
+  content: '';
+  background-image: url(../img/background-right.webp);
+  display: block;
+  right: calc(54% - 959px);
+  width: 319px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
 }
 .aside__list {
   list-style-type: none;
@@ -3960,7 +4012,7 @@ a {
 .slider {
   display: flex;
   align-items: flex-end;
-  background-image: url(../img/slide1.png);
+  background-image: url(../img/slide1.webp);
   background-position: center;
   border-radius: 6px;
   background-repeat: no-repeat;
@@ -3979,17 +4031,13 @@ a {
   bottom: 30px;
   opacity: 0.88;
 }
-.slider__buttom:hover {
-  left: 50% !important;
-  transform: translate(-50%, 0) !important;
-}
 @media (max-width: 992px) {
   .slider__buttom {
     display: block;
     bottom: -40px;
     width: 97%;
-    left: 50%;
-    transform: translate(-50%, 0);
+    left: 50% !important;
+    transform: translate(-50%, 0) !important;
   }
 }
 .slider__text {
@@ -4079,7 +4127,7 @@ a {
 .cart__image {
   cursor: pointer;
   position: relative;
-  background-image: url(../img/content1.png);
+  background-image: url(../img/content1.webp);
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -4185,6 +4233,13 @@ a {
 }
 .footer__partner {
   filter: grayscale(100%);
+  cursor: pointer;
+}
+.footer__partner img {
+  height: 25px;
+}
+.footer__partner:hover {
+  filter: grayscale(0);
 }
 .footer__container {
   background-color: #212121;
@@ -4194,6 +4249,14 @@ a {
   padding-bottom: 10px;
   list-style-type: none;
   padding-left: 0;
+}
+.footer__comercial {
+  cursor: pointer;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.footer__comercial img {
+  height: 27px;
 }
 .footer__copyright {
   color: #a9a9a9;
