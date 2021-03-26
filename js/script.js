@@ -36,7 +36,7 @@ window.onscroll = () => {
 
 let sliderFunc =() => {
     if(count == 4) {count = 1}
-    slider.style.backgroundImage = `url(../img/slide${count}.webp)`;
+    //slider.style.backgroundImage = `url(../img/slide${count}.webp)`;
     slider2h.innerText = sliderNames[count - 1][0]
     slider4h.innerText = sliderNames[count - 1][1]
     sliderButton.innerText = sliderNames[count - 1][2]
