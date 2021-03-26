@@ -1,7 +1,14 @@
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
 body {
   font-family: 'PT Sans', sans-serif;
   margin: 0;
   box-sizing: border-box;
+  background-color: #262634;
+  overflow-x: hidden;
+  width: 100%;
 }
 a {
   text-decoration: none;
