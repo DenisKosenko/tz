@@ -1,0 +1,87 @@
+.visible{
+    left: 0 !important;
+}
+
+.burger{
+    position: absolute;
+    top: 36px;
+    left: -500px;
+    z-index: 10;
+    transition-duration: 0.5s;
+    animation-direction: alternate;
+    cursor: pointer;
+
+    &__list{
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    &__item{
+
+        font-size: 20px;
+        padding: 0 12px;
+        font-weight: 500;
+        line-height: 45px;
+        width: 70vw;
+        max-width: 300px;
+        position: relative;
+        overflow-x: hidden;
+
+        &::after{
+            content: '';
+            background-image: url(../img/ball.svg);
+            position: absolute;
+            left: -20px;
+            top: 7px;
+            height: 30px;
+            width: 60px;
+            background-size: contain;
+            z-index: 1;
+            background-position: right;
+            background-repeat: no-repeat;
+            transition-duration: 0.5s;
+            animation-direction: alternate;
+        }
+
+        &::before{
+            content: '';
+            background-image: url(../img/arrow.png);
+            position: absolute;
+            right: 10px;
+            top: 7px;
+            height: 30px;
+            width: 60px;
+            background-size: contain;
+            z-index: 1;
+            background-position: right;
+            background-repeat: no-repeat;
+            transition-duration: 0.5s;
+            animation-direction: alternate;
+        }
+
+        &:hover::before{
+            right: -100px;
+        }
+
+        a{
+            padding-left: 40px;
+            text-decoration: none;
+        }
+
+        &-green{
+            background: linear-gradient(to bottom, #50c5ac 0%, #3fa18d 50%, #2e7f70 100%);
+            border: 1px solid #55a399;
+            a{
+                color: #fff;
+            }
+        }
+
+        &-gray{
+            background: linear-gradient(to bottom, #dfdfdf 0%, #afafaf 100%);
+            border: 1px solid #797979;
+            a{
+                color: rgb(75, 75, 75);
+            }
+        }
+    }
+}

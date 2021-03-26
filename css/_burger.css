@@ -1,0 +1,77 @@
+.visible {
+  left: 0 !important;
+}
+.burger {
+  position: absolute;
+  top: 36px;
+  left: -500px;
+  z-index: 10;
+  transition-duration: 0.5s;
+  animation-direction: alternate;
+  cursor: pointer;
+}
+.burger__list {
+  list-style-type: none;
+  padding-left: 0;
+}
+.burger__item {
+  font-size: 20px;
+  padding: 0 12px;
+  font-weight: 500;
+  line-height: 45px;
+  width: 70vw;
+  max-width: 300px;
+  position: relative;
+  overflow-x: hidden;
+}
+.burger__item::after {
+  content: '';
+  background-image: url(../img/ball.svg);
+  position: absolute;
+  left: -20px;
+  top: 7px;
+  height: 30px;
+  width: 60px;
+  background-size: contain;
+  z-index: 1;
+  background-position: right;
+  background-repeat: no-repeat;
+  transition-duration: 0.5s;
+  animation-direction: alternate;
+}
+.burger__item::before {
+  content: '';
+  background-image: url(../img/arrow.png);
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  height: 30px;
+  width: 60px;
+  background-size: contain;
+  z-index: 1;
+  background-position: right;
+  background-repeat: no-repeat;
+  transition-duration: 0.5s;
+  animation-direction: alternate;
+}
+.burger__item:hover::before {
+  right: -100px;
+}
+.burger__item a {
+  padding-left: 40px;
+  text-decoration: none;
+}
+.burger__item-green {
+  background: linear-gradient(to bottom, #50c5ac 0%, #3fa18d 50%, #2e7f70 100%);
+  border: 1px solid #55a399;
+}
+.burger__item-green a {
+  color: #fff;
+}
+.burger__item-gray {
+  background: linear-gradient(to bottom, #dfdfdf 0%, #afafaf 100%);
+  border: 1px solid #797979;
+}
+.burger__item-gray a {
+  color: #4b4b4b;
+}

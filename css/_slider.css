@@ -16,9 +16,13 @@
 }
 .slider__buttom {
   position: absolute;
-  right: 30px;
+  right: 30px ;
   bottom: 30px;
   opacity: 0.88;
+}
+.slider__buttom:hover {
+  left: 50% !important;
+  transform: translate(-50%, 0) !important;
 }
 @media (max-width: 992px) {
   .slider__buttom {
